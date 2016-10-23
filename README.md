@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-# exboard
-CRUD 페이징처리게시판
-=======
 # easyboard
-CRUD게시판 페이징처리
->>>>>>> branch 'master' of https://github.com/parlantier/easyboard.git
+간단한 게시판예제 제공
+exboard : CRUD 페이징 게시판
