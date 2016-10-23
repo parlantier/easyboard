@@ -42,7 +42,7 @@ $(function(){
     <title></title>
   </head>
   <body>
-    <h2>게시물</h2>
+    <h2>READ PAGE</h2>
       <p>title</p>
       <p><input type="text" name="title" value="${boardVO.title}" readonly="readonly"></p>
       <p>content</p>
