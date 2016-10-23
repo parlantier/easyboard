@@ -28,7 +28,6 @@ public class BoardController {
 	
 	@RequestMapping(value="/write", method = RequestMethod.GET)
 	public void write(){
-		
 	}
 	
 	@RequestMapping(value="/list", method = RequestMethod.GET)
