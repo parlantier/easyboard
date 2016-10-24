@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.reply.mapper.ReplyMapper">
+
+	<select id="listPage" resultType="ReplyVO">
+		select * from tbl_reply
+		where bno=#{bno}
+		group by bno desc, regdate desc
+		limit #{cri.pageStart}, #{cri.perPageNum}
+	</select>
+
+	<select id="confirm" resultType="ReplyVO">
+		
+		select * from tbl_reply
+		where rno = (select max(rno) from tbl_reply)
+	</select>
+
+	<insert id="addReply">
+		insert into tbl_reply(replytext,replyer,bno)
+		values(#{replytext}, #{replyer}, #{bno})
+	</insert>
+
+
+	<select id="count" resultType="int">
+		select count(*) from tbl_reply
+		where bno = #{bno}
+	</select>
+
+	<update id="update">
+		update tbl_reply set replytext = #{replytext}
+		where rno = #{rno}
+	</update>
+
+	<delete id="delete">
+		delete from tbl_reply
+		where rno = #{rno}
+	</delete>
+
+
+
+</mapper>

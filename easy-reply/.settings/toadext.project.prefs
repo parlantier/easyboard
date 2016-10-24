@@ -1,0 +1,7 @@
+//src/main/javaSQL_DETECTION=ON
+//src/main/resourcesSQL_DETECTION=ON
+//src/test/javaSQL_DETECTION=ON
+//src/test/resourcesSQL_DETECTION=ON
+DATABASE_LANGUAGE=MYSQL
+SQL_SOURCE_PATHS=src/main/resourcesSQL_SOURCE_PATH_DELIMITERsrc/test/javaSQL_SOURCE_PATH_DELIMITERsrc/main/javaSQL_SOURCE_PATH_DELIMITERsrc/test/resources
+eclipse.preferences.version=1
